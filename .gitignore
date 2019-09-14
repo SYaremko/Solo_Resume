@@ -1,0 +1,72 @@
+Skip to content
+Search or jump to�
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@SYaremko 
+0
+00SYaremko/S-Network
+ Code Issues 0 Pull requests 0 Projects 0 Wiki Security Insights Settings
+S-Network/.gitignore
+@SolomiiaYaremko SolomiiaYaremko first commit
+96b77eb on 29 Apr
+We found potential security vulnerabilities in your dependencies.
+Only the owner of this repository can see this message.
+
+40 lines (36 sloc) 498 Bytes
+
+*.java.hsp
+*.sonarj
+*.sw*
+.DS_Store
+.settings
+.springBeans
+bin
+build.sh
+integration-repo
+ivy-cache
+jxl.log
+jmx.log
+derby.log
+spring-test/test-output/
+.gradle
+argfile*
+
+activemq-data/
+
+classes/
+/build
+buildSrc/build
+/spring-*/build
+/src/asciidoc/build
+target/
+
+# Eclipse artifacts, including WTP generated manifests
+.classpath
+.project
+spring-*/src/main/java/META-INF/MANIFEST.MF
+
+# IDEA artifacts and output dirs
+*.iml
+*.ipr
+*.iws
+.idea
+out
+test-output
+atlassian-ide-plugin.xml
+.gradletasknamecache
+� 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
