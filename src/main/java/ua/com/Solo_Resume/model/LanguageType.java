@@ -1,4 +1,4 @@
-package com.soloResume.model;
+package ua.com.Solo_Resume.model;
 
 public enum LanguageType {
     ALL,

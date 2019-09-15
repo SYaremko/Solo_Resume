@@ -1,4 +1,4 @@
-package com.soloResume.filter;
+package ua.com.Solo_Resume.filter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

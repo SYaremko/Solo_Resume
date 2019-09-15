@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.solo_resome</groupId>
-    <artifactId>solo_resome</artifactId>
+    <groupId>solo_Resume</groupId>
+    <artifactId>ua.com.Solo_Resume</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -74,7 +74,9 @@
             </plugin>
         </plugins>
     </build>
-
+    <properties>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>

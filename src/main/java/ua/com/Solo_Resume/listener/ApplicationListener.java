@@ -1,4 +1,4 @@
-package com.soloResume.listener;
+package ua.com.Solo_Resume.listener;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

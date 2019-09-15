@@ -1,4 +1,4 @@
-package com.soloResume.service;
+package ua.com.Solo_Resume.service;
 
 public class NameService {
 
