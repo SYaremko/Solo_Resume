@@ -3,7 +3,7 @@
 <div class="card">
     <a href=""> <img src="/media/w.jpg" class="img-responsive img-rounded" style="width: 100%;"></a>
     <h1 class="text-center">
-        <a style="color: black" href="/edit">Solomiia Yaremko</a>
+        <a style="color: black" href="/edit">${fullName}</a>
     </h1>
     <h6 class="text-center">
         <strong>Age: </strong>24, <strong>Birthday: </strong> Feb 24, 1995

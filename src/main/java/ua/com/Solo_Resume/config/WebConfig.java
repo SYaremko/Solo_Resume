@@ -9,7 +9,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("ua.com.Solo_Resume.controller")
+@ComponentScan("ua.com.Solo_Resume")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Bean
