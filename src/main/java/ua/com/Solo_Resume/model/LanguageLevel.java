@@ -1,6 +1,7 @@
 package ua.com.Solo_Resume.model;
 
 public enum LanguageLevel {
+
     BEGGINER,
 
     ELEMENTARY,
@@ -15,7 +16,7 @@ public enum LanguageLevel {
 
     PROFICIENCY;
 
-    public String getDbValue(){
+    public String getDbValue() {
         return name().toLowerCase();
     }
 }

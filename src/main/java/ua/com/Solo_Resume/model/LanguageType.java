@@ -1,22 +1,23 @@
 package ua.com.Solo_Resume.model;
 
 public enum LanguageType {
+
     ALL,
 
     SPOKEN,
 
     WRITTING;
 
-    public String getDbValue(){
+    public String getDbValue() {
         return name().toLowerCase();
     }
 
-    public LanguageType getReverseType(){
-        if (this == SPOKEN){
+    public LanguageType getReverseType() {
+        if (this == SPOKEN) {
             return WRITTING;
-        } else if (this == WRITTING){
+        } else if (this == WRITTING) {
             return SPOKEN;
-        }else {
+        } else {
             throw new IllegalArgumentException(this + "does not have reverse type.");
         }
     }
