@@ -1,7 +1,8 @@
 <%@ tag pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <div class="card">
-    <a href=""> <img alt="bunny hop image"  src="<c:url value="/media/download.png" />" class="img-responsive img-rounded" style="width: 100%;" /></a>
+    <a href=""> <img alt="bunny hop image"  src="<c:url value="/media/w.jpg" />" class="img-responsive img-rounded" style="width: 100%;" /></a>
     <h1 class="text-center">
         <a style="color: black" href="/edit">${fullName}</a>
     </h1>
