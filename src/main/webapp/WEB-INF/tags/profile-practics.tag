@@ -39,7 +39,7 @@
     }
 
 </style>
-<div class="card">
+<div class="card" style="border-color: darkcyan">
     <div class="card-header bg-info text-white">
         <h6 class="card-title">
             <i class="fa fa-briefcase"></i> Practice <a class="edit-block" href="/edit/practice">Edit</a>
