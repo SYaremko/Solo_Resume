@@ -1,6 +1,6 @@
 <%@ tag pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
 <div class="card">
-    <div class="card-header">
+    <div class="card-header bg-info text-white">
         <h6 class="card-title">
             <i class="fa fa-certificate"></i> Certificates <a class="edit-block" href="/edit/certificate">Edit</a>
         </h6>

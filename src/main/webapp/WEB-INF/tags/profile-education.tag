@@ -1,6 +1,6 @@
 <%@ tag pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
 <div class="card">
-    <div class="card-header">
+    <div class="card-header bg-info text-white">
         <h6 class="card-title">
             <i class="fa fa-graduation-cap"></i> Education <a class="edit-block" href="/edit/education">Edit</a>
         </h6>
