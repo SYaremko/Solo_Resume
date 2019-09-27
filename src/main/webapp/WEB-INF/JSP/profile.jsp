@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <%@ taglib prefix="resume" tagdir="/WEB-INF/tags" %>
 <html lang="en">
 <head>
@@ -12,11 +11,12 @@
     <%--<link rel="stylesheet" href="/static/css/all.css">--%>
     <%--<link rel="stylesheet" href="/static/css/fontawesome.css">--%>
     <!--<link rel="stylesheet" href="/static/css/app.css">-->
-    <link href="/static/css/style.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="/static/css/style.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/profile-practics.css">
 
     <%--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">--%>
     <%--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">--%>
