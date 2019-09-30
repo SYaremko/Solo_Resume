@@ -1,8 +1,10 @@
 package ua.com.Solo_Resume.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -17,16 +19,18 @@ import java.util.Properties;
 
 @Configuration
 @PropertySource("classpath:application.properties")
-@EnableJpaRepositories("ua.com.Solo_Resume.dao")
 @EnableTransactionManagement
+@EnableJpaRepositories("ua.com.Solo_Resume.dao")
 public class DataConfig {
+    @Autowired
+    private Environment environment;
 
     public DataSource dataSource(){
         DriverManagerDataSource dataSource =new DriverManagerDataSource();
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost/db_solo_resume");
-        dataSource.setUsername("root");
-        dataSource.setPassword("root");
+        dataSource.setDriverClassName(environment.getRequiredProperty("db.driver"));
+        dataSource.setUrl(environment.getRequiredProperty("db.url"));
+        dataSource.setUsername(environment.getRequiredProperty("db.username"));
+        dataSource.setPassword(environment.getRequiredProperty("db.password"));
         return dataSource;
     }
 
@@ -36,7 +40,7 @@ public class DataConfig {
         vendorAdapter.setShowSql(true);
         return vendorAdapter;
     }
-    @Bean("entityManagerFactory")
+    @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
         factoryBean.setDataSource(dataSource());
@@ -44,7 +48,8 @@ public class DataConfig {
         factoryBean.setPackagesToScan("ua.com.Solo_Resume.entity");
 
         Properties properties = new Properties();
-        properties.put("hibernate.hbm2ddl.auto", "update" /*"create"*/ );
+        properties.put(environment.getRequiredProperty("hibernate.dialect"), "update" );
+
         factoryBean.setJpaProperties(properties);
         return factoryBean;
     }
