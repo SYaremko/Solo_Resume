@@ -1,10 +1,11 @@
 package ua.com.Solo_Resume.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "certificate")
-public class Certificate implements ProfileEntity {
+public class Certificate implements Serializable, ProfileEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

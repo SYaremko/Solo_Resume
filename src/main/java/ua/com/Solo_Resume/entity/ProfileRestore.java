@@ -1,11 +1,11 @@
 package ua.com.Solo_Resume.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "profile_restore")
-public class ProfileRestore {
-    private static final long serialVersionUID = 1L;
+public class ProfileRestore implements Serializable{
 
     @Id
     @Column(unique = true, nullable = false)

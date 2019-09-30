@@ -1,14 +1,14 @@
 package ua.com.Solo_Resume.entity;
 
 import org.joda.time.DateTime;
-
 import javax.persistence.*;
-import java.util.Date;
+import java.io.Serializable;
+import java.sql.Date;
+
 
 @Entity
 @Table(name = "practic")
-public class Practic extends AbstractFinishDateEntity<Long> implements ProfileEntity {
-    private static final long serialVersionUID = 1L;
+public class Practic extends AbstractFinishDateEntity<Long> implements Serializable, ProfileEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -4,10 +4,11 @@ import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import java.io.Serializable;
 
 @Embeddable
 @Access(AccessType.FIELD)
-public class Contacts {
+public class Contacts implements Serializable{
 
     @Column(length = 80)
     private String skype;

@@ -1,10 +1,11 @@
 package ua.com.Solo_Resume.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "hobby")
-public class Hobby implements Comparable<Hobby>, ProfileEntity {
+public class Hobby implements Serializable, Comparable<Hobby>, ProfileEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

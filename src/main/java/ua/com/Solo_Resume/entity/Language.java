@@ -4,11 +4,11 @@ import ua.com.Solo_Resume.model.LanguageLevel;
 import ua.com.Solo_Resume.model.LanguageType;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "language")
-public class Language implements ProfileEntity {
-    private static final long serialVersionUID = 1L;
+public class Language implements Serializable, ProfileEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

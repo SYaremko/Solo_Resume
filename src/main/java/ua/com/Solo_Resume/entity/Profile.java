@@ -3,13 +3,14 @@ package ua.com.Solo_Resume.entity;
 import org.joda.time.LocalDate;
 import org.joda.time.Years;
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.List;
 
 @Entity
 @Table(name = "profile")
-public class Profile {
+public class Profile implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
