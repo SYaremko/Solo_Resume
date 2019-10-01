@@ -62,4 +62,23 @@ public class Skill implements Serializable, ProfileEntity {
         this.profile = profile;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Skill)) return false;
+
+        Skill skill = (Skill) o;
+
+        if (id != null ? !id.equals(skill.id) : skill.id != null) return false;
+        if (category != null ? !category.equals(skill.category) : skill.category != null) return false;
+        return value != null ? value.equals(skill.value) : skill.value == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (category != null ? category.hashCode() : 0);
+        result = 31 * result + (value != null ? value.hashCode() : 0);
+        return result;
+    }
 }

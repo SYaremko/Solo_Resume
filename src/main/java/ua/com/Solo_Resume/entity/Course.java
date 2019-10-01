@@ -22,6 +22,9 @@ public class Course implements Serializable, ProfileEntity {
     @JoinColumn(name = "id_profile", nullable = false)
     private Profile profile;
 
+    public Course() {
+    }
+
     public Long getId() {
         return id;
     }

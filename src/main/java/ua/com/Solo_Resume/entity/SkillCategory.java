@@ -1,9 +1,6 @@
 package ua.com.Solo_Resume.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -11,11 +8,15 @@ import java.io.Serializable;
 public class SkillCategory implements Serializable{
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column
     private Long id;
 
     @Column(nullable = false, length = 50)
     private String category;
+
+    public SkillCategory() {
+    }
 
     public Long getId() {
         return id;

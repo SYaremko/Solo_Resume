@@ -28,9 +28,8 @@ public class Contacts implements Serializable{
     @Column(length = 255)
     private String stackoverflow;
 
-    public Contacts() {
-        super();
-    }
+    public Contacts(){
+    };
 
     public String getSkype() {
         return skype;
