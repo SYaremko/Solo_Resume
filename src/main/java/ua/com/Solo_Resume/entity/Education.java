@@ -27,7 +27,6 @@ public class Education implements Serializable, ProfileEntity {
     @Column(name = "finish_year")
     private Integer finishYear;
 
-    //bi-directional many-to-one association to Profile
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_profile", nullable = false)
     private Profile profile;

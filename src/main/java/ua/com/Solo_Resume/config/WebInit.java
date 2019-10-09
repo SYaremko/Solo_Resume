@@ -1,6 +1,5 @@
 package ua.com.Solo_Resume.config;
 
-
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.WebApplicationContext;
@@ -8,7 +7,6 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.DispatcherServlet;
 import ua.com.Solo_Resume.filter.ResumeFilter;
-
 import javax.servlet.*;
 import java.util.EnumSet;
 

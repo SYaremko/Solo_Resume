@@ -48,7 +48,7 @@ public class DataConfig {
         factoryBean.setPackagesToScan("ua.com.Solo_Resume.entity");
 
         Properties properties = new Properties();
-        properties.put(environment.getRequiredProperty("hibernate.dialect"), "update" );
+        properties.put(environment.getRequiredProperty("hibernate.creator"), "update" );
 
         factoryBean.setJpaProperties(properties);
         return factoryBean;
